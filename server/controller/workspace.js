@@ -55,44 +55,10 @@ console.log(req.body.id);
               err.message || "Some error occurred while removing Workspace"
           });
         });
-    // const workspace = {
-    //     name: req.body.workspaceName,
-    //     userId: req.body.userId,
-    //     subDomain: null
-    // }
-    // Workspace.create(req.body.id)
-    // .then(data => {
-    //     res.status(200).send({
-    //         success: true,
-    //         data: data,
-    //         message: ""
-    //       });
-    // })
-    // .catch(err => {
-    //   res.status(500).send({
-    //     message:
-    //       err.message || "Some error occurred while creating the User."
-    //   });
-    // });
+    
 }
 exports.editWorkspace = (req, res) => {
     
-
-
-    // Workspace.findAll({where: { id: req.body.id }})
-    // .then(data => {
-    //     console.log(data);
-    //   res.send(data);
-    // })
-    // .catch(err => {
-    //   res.status(500).send({
-    //     message:
-    //       err.message || "Some error occurred while retrieving tutorials."
-    //   });
-    // });
-// console.log(userFind);
-
-
     Workspace.update(
         {name: req.body.name},
         {where: {id: req.body.id}}

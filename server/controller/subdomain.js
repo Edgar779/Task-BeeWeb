@@ -58,43 +58,6 @@ Workspace.findAll({}).then(data => {
 
 })
      
-    // const random = Math.floor(Math.random() * 100);
-    // Workspace.findByPk(id)
-    //     .then(data => {
-    //       if(data.subDomain === subDomain){
-    //         res.send({success: false, message: `subDomain is not available, please use ${data.subDomain + random}`});
-    //       }
-    //       else {
-    //         Workspace.update(
-    //             {subDomain: subDomain},
-    //             {where: {id}}
-    //           )
-    //           .then(num => {
-    //             if (num == 1) {
-                    
-    //               res.send({
-    //                 success: true,
-    //                 message: "SubDomain was created successfully."
-    //               });
-    //             } else {
-    //               res.send({
-    //                 success: false,
-    //                 message: `Cannot create subDomain with id=${id}. Maybe Workspaces was not found!`
-    //               });
-    //             }
-    //           })
-    //           .catch(err => {
-    //             res.status(500).send({
-    //               message: "Error creating SubDomain with id=" + id
-    //             });
-    //           });
-    //       }
-    //     })
-    //     .catch(err => {
-    //       res.status(500).send({
-    //         message: "Error retrieving Tutorial with id=" + id
-    //       });
-    //     });
     
 };
 
