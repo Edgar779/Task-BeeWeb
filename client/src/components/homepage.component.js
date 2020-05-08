@@ -68,18 +68,6 @@ export default class HomePage extends Component {
         
                 this.setState({workspaces});
                 
-                // if(!response.data.success){
-                //     return this.setState({
-                //         domainStatus: response.message
-                //     })
-    
-                // }
-                // this.setState(() => ({loginErr: ''}));
-                // this.setState({domainStatus: response.data.message})
-    
-            //     localStorage.setItem("login", "true");
-    
-            //    return this.props.history.push('/homepage');
             })
             .catch(function (error) {
             console.log(error);
@@ -206,10 +194,6 @@ export default class HomePage extends Component {
 
                 this.setState({workspaces});
 
-                // this.setState(() => ({loginErr: ''}));
-                // this.setState({domainStatus: response.data.message})
-    
-           
             })
             .catch(function (error) {
             console.log(error);
@@ -251,9 +235,7 @@ export default class HomePage extends Component {
                 this.setState(() => ({workspaces}));
                 return;
             }
-    
-            // const id = localStorage.getItem('id');
-     
+         
             const formData = {
                 subDomain: subDomain,
                 id: id
@@ -272,11 +254,7 @@ export default class HomePage extends Component {
                 });
         
                 this.setState({workspaces});
-                // this.setState(() => ({loginErr: ''}));
-    
-            //     localStorage.setItem("login", "true");
-    
-            //    return this.props.history.push('/homepage');
+
             })
             .catch(function (error) {
             console.log(error);
@@ -313,23 +291,6 @@ export default class HomePage extends Component {
             <input type="text" placeholder="type workspace name" onChange={this.wrokspaceName} />
             <button onClick={this.createWorkspace}>Create workspace</button>
         </div>
-
-                     {/* <h3>Workspace</h3>
-             <div className="form-group">
-                    <label>Type your subDomain</label>
-                    <input type="text"  name="subDomain" onChange={this.onChange} className="form-control" placeholder="Enter subDomain" />
-
-                    <p style={{marginTop: '10px'}}>{this.state.domainStatus}</p>
-                    <p style={{color: 'green'}}>{this.state.availableDomain}</p>
-                    <button type="submit" style={{marginTop: '40px'}} className="btn btn-primary btn-block">Submit</button>
-
-               </div>  */}
-
-
-
-
-
-
         
             </form>:<h3>Please Login</h3>
          }
